@@ -1,0 +1,4 @@
+.list-container__contain {
+display: flex;
+flex-direction: column;
+}

@@ -1,0 +1,24 @@
+.h3-text {
+  margin-top: 10px;
+  font-weight: 500;
+  
+}
+.feedback-container {
+  width: 18rem;
+  height: auto;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.form-btn {
+width: 16rem;
+height: 3.5rem;
+font-size: 1.5rem;
+font-weight: 500;
+padding: 10px;
+text-align: center;
+background-color: #8ee0bf;
+margin: 20px;
+border-radius: 10px;
+border: 0;
+}

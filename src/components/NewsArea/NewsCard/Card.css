@@ -1,0 +1,48 @@
+.card {
+  width: 16rem;
+  height: 16rem;
+  margin: 15px;
+}
+.cross-icon {
+  color: red;
+  position: relative;
+  left: 7rem;
+  bottom: 1rem;
+  line-height: 0;
+}
+.cross-icon:hover {
+  cursor: pointer;
+}
+.body-container {
+  height: 60%;
+}
+.title-text {
+  width: 90%;
+  font-size: 1rem;
+  font-weight: 700 bolder;
+  text-align: left;
+  line-height: 1;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sum-text {
+  width: 90%;
+  font-size: 0.7rem;
+  text-align: left;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.date-published {
+  width: 90%;
+  font-size: 0.8rem;
+  text-align: left;
+}
+.video-preview {
+  width: 90%;
+  height: 40%;
+  margin: 10px auto;
+}

@@ -1,0 +1,33 @@
+.toggle-container {
+  width: 18rem;
+  height: auto;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.view-text {
+  margin: 10px;
+}
+.icon-container {
+  width: 80%;
+  background-color: #ebf2f7;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+}
+.icon1 {
+  width: 50%;
+}
+.icon2 {
+width: 50%;
+}
+.icon1:hover {
+  cursor: pointer;
+  background-color: #8ee0bf;
+  border-radius: 10px;
+}
+.icon2:hover {
+  cursor: pointer;
+  background-color: #8ee0bf;
+  border-radius: 10px;
+}

@@ -1,0 +1,16 @@
+.user-card {
+  width: 18rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.user-img {
+  margin: 10px;
+}
+.welcome-msg {
+  line-height: 0;
+}
