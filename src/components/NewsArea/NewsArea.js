@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import CardList from "./NewsCard/CardList";
+import CardView from "./NewsCard/CardView";
 import Pagination from "../Pagination/Pagination";
-// import NewsList from "./NewsList";
+import ListView from "./NewsList/ListView";
 
-const NewsArea = ({ news, removeCard }) => {
+const NewsArea = ({ news, removeCard, loading, active }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [newsPerPage] = useState(6);
+  const [newsPerPage] = useState(5);
+  
+
 
   const indexOfLastNews = currentPage * newsPerPage;
   const indexOfFirstNews = indexOfLastNews - newsPerPage;
@@ -13,9 +15,15 @@ const NewsArea = ({ news, removeCard }) => {
 
   return (
     <div>
-      {/* <NewsList news={currentNews} /> */}
-
-      <CardList news={currentNews} handleClick={removeCard} />
+      {active ? (
+        <ListView
+          news={currentNews}
+          handleClick={removeCard}
+          loading={loading}
+        />
+      ) : (
+        <CardView news={currentNews} handleClick={removeCard} />
+      )}
       <Pagination
         className="pagination-bar"
         currentPage={currentPage}

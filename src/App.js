@@ -3,13 +3,12 @@ import NewsArea from "./components/NewsArea/NewsArea";
 import SideBar from "./components/SideBar/SideBar";
 import "./App.css";
 import axios from "axios";
-
+import useToggle from "./useToggle";
 
 function App() {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(false);
- const [state, setstate] = useState(true)
-  
+  const [active, setActive] = useToggle();
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -20,20 +19,26 @@ function App() {
     };
     fetchNews();
   }, []);
- const removeCard = (key) => {
+  const removeCard = (key) => {
     setNews(news.slice(0, key).concat(news.slice(key + 1, news.length)));
-  
- };
-const handleClick = () => {
-setstate(false)
-}
+  };
+
+  const handleChange = () => {
+    setActive(false);
+  };
+
   return (
     <div className="App">
-      <div className="user-info">
-        <SideBar handleClick={handleClick}/>
+      <div className="sidebar-area-container">
+        <SideBar handleChange={handleChange} />
       </div>
-      <div className="news-area">
-        <NewsArea news={news} loading={loading} removeCard={removeCard}/>
+      <div className="news-area-container">
+        <NewsArea
+          news={news}
+          loading={loading}
+          removeCard={removeCard}
+          active={active}
+        />
       </div>
     </div>
   );

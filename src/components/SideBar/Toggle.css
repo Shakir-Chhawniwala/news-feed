@@ -5,28 +5,28 @@
   background-color: #fff;
   border-radius: 8px;
 }
-.view-text {
+.toggle-text {
   margin: 10px;
 }
-.icon-container {
+.toggle-icons-container {
   width: 80%;
   background-color: #ebf2f7;
   margin: 20px auto;
   border-radius: 10px;
   display: flex;
 }
-.icon1 {
+.icon-card {
   width: 50%;
 }
-.icon2 {
+.icon-list {
 width: 50%;
 }
-.icon1:hover {
+.icon-card:hover {
   cursor: pointer;
   background-color: #8ee0bf;
   border-radius: 10px;
 }
-.icon2:hover {
+.icon-list:hover {
   cursor: pointer;
   background-color: #8ee0bf;
   border-radius: 10px;

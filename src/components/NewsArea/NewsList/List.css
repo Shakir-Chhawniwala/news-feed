@@ -1,0 +1,49 @@
+.list {
+  width: 60vw;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.list-items-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 90%;
+  border-radius: 10px;
+}
+.cross-icon-container {
+  width: 10%;
+}
+.cross-icon-container:hover {
+  cursor: pointer;
+}
+.video-box {
+  width: 10%;
+}
+.list-text-container {
+  width: 90%;
+  text-align: left;
+}
+
+.list-title-text h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-sum-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list-date-view {
+  line-height: 0;
+}
+
+.icon {
+  color: red;
+}

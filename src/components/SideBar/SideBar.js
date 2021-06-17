@@ -1,17 +1,17 @@
-import React from 'react'
-import Reader from './Reader'
-import Toggle from './Toggle'
-import FeedBack from "./FeedBack"
-import "./SideBar.css"
+import React from "react";
+import Reader from "./Reader";
+import Toggle from "./Toggle";
+import FeedBack from "./FeedBack";
+import "./SideBar.css";
 
-const SideBar = () => {
-    return (
-        <div className="sidebar">
-        <Reader />
-        <Toggle />
-        <FeedBack />   
-        </div>
-    )
-}
+const SideBar = ({ handleChange }) => {
+  return (
+    <div className="sidebar">
+      <Reader />
+      <Toggle handleChange={handleChange} />
+      <FeedBack />
+    </div>
+  );
+};
 
-export default SideBar
+export default SideBar;

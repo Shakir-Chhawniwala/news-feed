@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "./Card";
-import "./CardList.css";
+import "./CardView.css";
 
-const NewsCard = ({news,loading,handleClick}) => {
+const CardView = ({news,loading,handleClick}) => {
 if (loading) {
   return <h2>Loading...</h2>
 }
@@ -20,4 +20,4 @@ if (loading) {
   return <div className="card-container">{renderedItems}</div>;
 };
 
-export default NewsCard;
+export default CardView;

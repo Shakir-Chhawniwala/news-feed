@@ -3,12 +3,11 @@ import CloseIcon from "@material-ui/icons/Close";
 import { Card } from "react-bootstrap";
 import "./Card.css";
 
-const SingleCard = ({
+const Cards = ({
   title,
   summary,
   link,
   published,
-  onNewsSelect,
   handleClick,
 }) => {
   return (
@@ -25,7 +24,7 @@ const SingleCard = ({
         <Card.Text className="date-published">{published}</Card.Text>
       </Card.Body>
       <div className="video-preview">
-        <video controls width="200" onClick={() => onNewsSelect(link)}>
+        <video controls width="200">
           <source src={link} type="video/mp4" />
         </video>
       </div>
@@ -33,5 +32,5 @@ const SingleCard = ({
   );
 };
 
-export default SingleCard;
+export default Cards;
 

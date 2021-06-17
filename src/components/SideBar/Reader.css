@@ -1,4 +1,4 @@
-.user-card {
+.user-info-card {
   width: 18rem;
   height: auto;
   display: flex;
@@ -11,6 +11,6 @@
 .user-img {
   margin: 10px;
 }
-.welcome-msg {
+.user-welcome-msg {
   line-height: 0;
 }
