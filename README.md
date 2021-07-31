@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# News Feed App
 
 News Feed App
 
