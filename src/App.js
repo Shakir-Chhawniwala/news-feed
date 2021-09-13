@@ -13,11 +13,20 @@ function App() {
   useEffect(() => {
     const fetchNews = async () => {
       setLoading(true);
-      const res = await axios.get("https://api.first.org/data/v1/news");
+      const res = await axios.get("https://cors-anywhere.herokuapp.com/https://api.first.org/data/v1/news/");
       setNews(res.data.data);
       setLoading(false);
     };
     fetchNews();
+    // setLoading(true);
+    // axios
+    //   .get(
+    //     `https://cors-anywhere.herokuapp.com/https://api.first.org/data/v1/news/`
+    //   )
+    //   .then((response) => {
+    //     setNews(response.data.data);
+    //     setLoading(false);
+    //   });
   }, []);
   const removeCard = (key) => {
     setNews(news.slice(0, key).concat(news.slice(key + 1, news.length)));
